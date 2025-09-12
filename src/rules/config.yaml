@@ -1,0 +1,61 @@
+hard_rules:
+  - id: edu_degree
+    when: "internship.education_required && internship.education_required.degree"
+    check: "includes(internship.education_required.degree, user.education.degree)"
+    fail_reason: "Degree requirement not met"
+
+  - id: edu_year
+    when: "internship.education_required && internship.education_required.year_min"
+    check: "user.education.year >= internship.education_required.year_min"
+    fail_reason: "Minimum year not met"
+
+  - id: skills_required
+    check: "subset(internship.skills_required, normSkills(user.skills))"
+    fail_reason: "Required skills missing"
+
+  - id: deadline
+    check: "now() <= internship.application_deadline"
+    fail_reason: "Application deadline passed"
+
+  - id: language_required
+    when: "internship.language_required && internship.language_required.length"
+    check: "overlap(internship.language_required, user.language_pref)"
+    fail_reason: "Language requirement not met"
+
+  - id: women_only
+    when: "internship.diversity_eligibility && internship.diversity_eligibility.women_only === true"
+    check: "user.constraints && user.constraints.gender === 'F'"
+    fail_reason: "Women-only internship"
+
+soft_rules:
+  - id: stipend_pref
+    weight: 1.5
+    score: "internship.stipend >= (user.preferences && user.preferences.stiped_min || 0) ? 1 : 0"
+
+  - id: location_proximity
+    weight: 2.0
+    score: "distance(user.geo, internship.geo) <= 25 ? 1 : (internship.is_remote ? 0.8 : 0)"
+
+  - id: org_type_affinity
+    weight: 1.0
+    score: "user.preferences && user.preferences.org_types && includes(user.preferences.org_types, internship.org_type) ? 1 : 0"
+
+  - id: skills_nice_to_have
+    weight: 1.2
+    score: "jaccard(internship.skills_nice_to_have || [], normSkills(user.skills))"
+
+  - id: role_keyword
+    weight: 1.3
+    score: "keyword(user.preferences && user.preferences.roles || [], internship.title, internship.description)"
+
+tie_breakers:
+  - "internship.verified ? 1 : 0"
+  - "recent(internship.posted_at)"
+  - "internship.stipend || 0"
+
+fairness:
+  diversity_boost:
+    women: 0.1
+    pwd: 0.15
+    ews: 0.1
+  cap_per_session: 0.2

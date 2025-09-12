@@ -1,0 +1,26 @@
+{
+  "name": "phantom-troupe-recommender",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "NODE_ENV=development node src/server.js",
+    "seed": "node scripts/seed.js",
+    "seed:reset": "node scripts/seed.js --reset",
+    "create-test-data": "node scripts/create-test-data.js",
+    "view-db": "node scripts/view-db.js",
+    "view-users": "node scripts/view-db.js --collection=users",
+    "view-internships": "node scripts/view-db.js --collection=internships"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "express": "^4.19.2",
+    "js-yaml": "^4.1.0",
+    "mongoose": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  }
+}

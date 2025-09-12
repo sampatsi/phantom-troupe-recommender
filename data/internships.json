@@ -1,0 +1,195 @@
+[
+  {
+    "_id": "i_55",
+    "title": "Software Intern - eGov",
+    "org": "Dept. of IT",
+    "org_type": "Govt Dept",
+    "description": "Java-based services; Excel reporting for public dashboards",
+    "skills_required": [
+      "Java",
+      "SQL",
+      "Excel"
+    ],
+    "skills_nice_to_have": [
+      "Spring",
+      "REST"
+    ],
+    "education_required": {
+      "degree": [
+        "B.Tech",
+        "B.Sc"
+      ],
+      "branches": [
+        "CSE",
+        "IT"
+      ],
+      "year_min": 2
+    },
+    "location": "Bengaluru",
+    "is_remote": true,
+    "stipend": 10000,
+    "duration_months": 3,
+    "application_deadline": "2025-11-30",
+    "language_required": [
+      "en"
+    ],
+    "diversity_eligibility": {
+      "women_only": false,
+      "pwd_friendly": true,
+      "ews_priority": true
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        77.59,
+        12.97
+      ]
+    },
+    "verified": true,
+    "posted_at": "2025-09-05T00:00:00Z"
+  },
+  {
+    "_id": "i_77",
+    "title": "Data Intern - City Analytics",
+    "org": "Smart City Lab",
+    "org_type": "PSU",
+    "description": "Data cleaning, Python notebooks, dashboards",
+    "skills_required": [
+      "Python",
+      "Excel"
+    ],
+    "skills_nice_to_have": [
+      "Pandas",
+      "Visualization"
+    ],
+    "education_required": {
+      "degree": [
+        "B.Tech",
+        "B.Sc"
+      ],
+      "branches": [
+        "CSE",
+        "IT",
+        "ECE"
+      ],
+      "year_min": 2
+    },
+    "location": "Bengaluru",
+    "is_remote": false,
+    "stipend": 9000,
+    "duration_months": 2,
+    "application_deadline": "2025-10-15",
+    "language_required": [
+      "en"
+    ],
+    "diversity_eligibility": {
+      "women_only": false,
+      "pwd_friendly": true,
+      "ews_priority": false
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        77.6,
+        12.96
+      ]
+    },
+    "verified": true,
+    "posted_at": "2025-09-01T00:00:00Z"
+  },
+  {
+    "_id": "i_12",
+    "title": "Software Intern - Telecom",
+    "org": "Telecom PSU",
+    "org_type": "PSU",
+    "description": "C++/Java microservices; shift-based support",
+    "skills_required": [
+      "C++",
+      "Java"
+    ],
+    "skills_nice_to_have": [
+      "Linux",
+      "Networking"
+    ],
+    "education_required": {
+      "degree": [
+        "B.Tech"
+      ],
+      "branches": [
+        "CSE",
+        "IT",
+        "ECE"
+      ],
+      "year_min": 3
+    },
+    "location": "Hyderabad",
+    "is_remote": false,
+    "stipend": 8000,
+    "duration_months": 6,
+    "application_deadline": "2025-09-25",
+    "language_required": [
+      "en"
+    ],
+    "diversity_eligibility": {
+      "women_only": false,
+      "pwd_friendly": false,
+      "ews_priority": false
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        78.4867,
+        17.385
+      ]
+    },
+    "verified": true,
+    "posted_at": "2025-08-29T00:00:00Z"
+  },
+  {
+    "_id": "i_99",
+    "title": "Women in Tech \u2013 Web Intern",
+    "org": "Startup Hub",
+    "org_type": "Private",
+    "description": "Frontend React development; mentorship program",
+    "skills_required": [
+      "JavaScript"
+    ],
+    "skills_nice_to_have": [
+      "React",
+      "CSS"
+    ],
+    "education_required": {
+      "degree": [
+        "B.Tech",
+        "B.Sc"
+      ],
+      "branches": [
+        "CSE",
+        "IT"
+      ],
+      "year_min": 2
+    },
+    "location": "Remote",
+    "is_remote": true,
+    "stipend": 7000,
+    "duration_months": 2,
+    "application_deadline": "2025-10-10",
+    "language_required": [
+      "en"
+    ],
+    "diversity_eligibility": {
+      "women_only": true,
+      "pwd_friendly": true,
+      "ews_priority": true
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        77.59,
+        12.97
+      ]
+    },
+    "verified": true,
+    "posted_at": "2025-09-07T00:00:00Z"
+  }
+]

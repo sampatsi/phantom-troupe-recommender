@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "u_asha",
+    "name": "Asha",
+    "email": "asha@univ.edu",
+    "education": {
+      "degree": "B.Tech",
+      "branch": "CSE",
+      "year": 3,
+      "cgpa": 8.1
+    },
+    "skills": [
+      "Java",
+      "SQL",
+      "Excel",
+      "Hindi"
+    ],
+    "certifications": [
+      "NPTEL-ML"
+    ],
+    "preferences": {
+      "roles": [
+        "Software",
+        "Data"
+      ],
+      "locations": [
+        "Bengaluru",
+        "Remote"
+      ],
+      "stiped_min": 8000,
+      "org_types": [
+        "Govt Dept",
+        "PSU",
+        "Private"
+      ]
+    },
+    "constraints": {
+      "disability": false,
+      "gender": "F",
+      "income_band": "EWS"
+    },
+    "language_pref": [
+      "hi",
+      "en"
+    ],
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        77.5946,
+        12.9716
+      ]
+    }
+  }
+]

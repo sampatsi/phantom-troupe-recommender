@@ -1,0 +1,14 @@
+### Health
+GET http://localhost:8080/health
+
+### Facets
+GET http://localhost:8080/api/facets
+
+### Recommendations (default user u_asha)
+GET http://localhost:8080/api/recommendations?limit=5
+
+### Recommendations for explicit user
+GET http://localhost:8080/api/recommendations?user=u_asha&limit=5
+
+### One internship
+GET http://localhost:8080/api/internships/i_55
